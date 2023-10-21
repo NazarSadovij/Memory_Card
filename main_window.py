@@ -93,4 +93,18 @@ def show_result():
     RadioGroupBox.hide()
     ansGroupBox.show()
 
-checkBtn.clicked.connect(show_result)
+
+def show_question():
+    RadioGroupBox.show()
+    ansGroupBox,hide()
+
+checkBtn.setText("Наступне питання")
+
+def show_question():
+    RadioGroupBox.show()
+    ansGroupBox,hide()
+    checkBtn.setText("Переввірити")
+    btn1.setChecked(False)
+    btn2.setChecked(False)
+    btn3.setChecked(False)
+    btn4.setChecked(False)
