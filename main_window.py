@@ -1,15 +1,6 @@
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QRadioButton, QHBoxLayout, QVBoxLayout, QSpinBox, QPushButton, QGroupBox, QButtonGroup 
 from PyQt5.QtCore import Qt
 
-
-
-
-
-
-
-
-
-
 card_width, card_height = 600, 500
 win_card = QWidget()
 win_card.resize(card_width, card_height)
@@ -88,23 +79,3 @@ main_line.addWidget(ansGroupBox, stretch=3)
 main_line.addWidget(checkBtn, stretch=1)
 
 win_card.setLayout(main_line)
-
-def show_result():
-    RadioGroupBox.hide()
-    ansGroupBox.show()
-
-
-def show_question():
-    RadioGroupBox.show()
-    ansGroupBox,hide()
-
-checkBtn.setText("Наступне питання")
-
-def show_question():
-    RadioGroupBox.show()
-    ansGroupBox,hide()
-    checkBtn.setText("Переввірити")
-    btn1.setChecked(False)
-    btn2.setChecked(False)
-    btn3.setChecked(False)
-    btn4.setChecked(False)
